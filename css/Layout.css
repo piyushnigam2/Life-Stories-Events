@@ -63,6 +63,10 @@
             .monospace {
                 font-size: 15px;
             }
+            .logo {
+                height: 50px;
+                width: 50px;
+            }
         }
         .carousel-content {
             position: absolute;
