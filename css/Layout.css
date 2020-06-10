@@ -56,7 +56,7 @@
                 float: none;
             }
         }
-        @media screen and (max-device-width: 480px) {
+        @media screen and (max-width: 768px) {
             .carousel-content{
                 font-size: 15px;
             }
