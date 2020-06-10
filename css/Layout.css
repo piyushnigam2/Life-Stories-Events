@@ -55,13 +55,14 @@
             .header-right {
                 float: none;
             }
+        }
+        @media screen and (max-width: 480px) {
             .carousel-content{
                 font-size: 15px;
             }
             .monospace {
                 font-size: 15px;
             }
-
         }
         .carousel-content {
             position: absolute;
