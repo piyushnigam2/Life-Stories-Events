@@ -1,8 +1,9 @@
         .logo{
-			height: 170px;
-			width: 170px;
+            height: 170px;
+            width: 170px;
             top: 0;
-		}
+            border: 0;
+        }
         * {box-sizing: border-box;}
         body { 
             margin: 0;
@@ -55,10 +56,6 @@
             .header-right {
                 float: none;
             }
-            .logo{
-                height: 50px;
-                width: 50px;
-            }
         }
         .carousel-content {
             position: absolute;
@@ -76,13 +73,4 @@
             font-family: "Lucida Console", Courier, monospace;
             letter-spacing: 5px;
             font-size: 30px;
-        }
-        @media (min-width: 576px) and (max-width: 767px) {
-            .carousel-content {
-                font-size: 15px;
-            }
-            .monospace {
-                font-size: 10px;
-                letter-spacing: 0px;
-            }
         }
