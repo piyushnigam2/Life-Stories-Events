@@ -56,3 +56,20 @@
                 float: none;
             }
         }
+        .carousel-content {
+            position: absolute;
+            bottom: 20%;
+            left: 33%;
+            z-index: 20;
+            font-size: 30px;
+            color: white;
+        }
+        .caro-img img{
+            -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+            filter: blur(5px);
+        }
+        .monospace {
+            font-family: "Lucida Console", Courier, monospace;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
