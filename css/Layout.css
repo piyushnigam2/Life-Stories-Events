@@ -55,6 +55,13 @@
             .header-right {
                 float: none;
             }
+            .carousel-content{
+                font-size: 15px;
+            }
+            .monospace {
+                font-size: 15px;
+            }
+
         }
         .carousel-content {
             position: absolute;
