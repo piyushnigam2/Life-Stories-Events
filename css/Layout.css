@@ -71,3 +71,10 @@
             -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
             filter: blur(5px);
         }
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class="logo"] {
+                height: 100px;
+                width: 100px;
+                }
+            }
