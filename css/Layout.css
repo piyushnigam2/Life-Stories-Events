@@ -71,7 +71,5 @@
         }
         .responsive {
             width: 100px;
-            height: auto;
-            display: block;
-            top: 0;
+            height: 100px;
 }
