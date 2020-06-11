@@ -1,4 +1,9 @@
-        
+        .logo{
+            height: 170px;
+            width: 170px;
+            top: 0;
+            border: 0;
+        }
         * {box-sizing: border-box;}
         body { 
             margin: 0;
@@ -68,4 +73,5 @@
             width: 100px;
             height: auto;
             display: block;
+            top: 0;
 }
