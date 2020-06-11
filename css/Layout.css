@@ -1,9 +1,4 @@
-        .logo{
-            height: 170px;
-            width: 170px;
-            top: 0;
-            border: 0;
-        }
+        
         * {box-sizing: border-box;}
         body { 
             margin: 0;
@@ -70,7 +65,7 @@
             filter: blur(5px);
         }
         .responsive {
-  width: 100px;
-  height: auto;
-  display: block;
+            width: 100px;
+            height: auto;
+            display: block;
 }
