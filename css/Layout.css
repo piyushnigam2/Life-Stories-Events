@@ -66,8 +66,7 @@
             color: white;
         }
         .caro-img img{
-            -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-            opacity: 0;
+            opacity: 0.2;
         }
         .monospace {
             font-family: "Lucida Console", Courier, monospace;
