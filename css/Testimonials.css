@@ -18,7 +18,7 @@
      position: relative;
      display: flex;
      width: 350px;
-     flex-direction: row;
+     flex-direction: column;
      min-width: 0;
      word-wrap: break-word;
      background-color: #fff;
