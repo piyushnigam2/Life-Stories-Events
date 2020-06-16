@@ -1,0 +1,55 @@
+@media (min-width: 1200px) and (max-width: 1300px) {
+    
+    .monospace {
+        font-family: "Lucida Console", Courier, monospace;
+        letter-spacing: 2px;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .carousel-content {
+    top: 30%;
+    -webkit-transform: translateX(-50%) translateY(-30%);
+    transform: translateX(-50%) translateY(-30%);
+    }
+    
+    .carousel-caption {
+        margin-top: 20px;
+        padding: 20px 0;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+    .monospace {
+        font-family: "Lucida Console", Courier, monospace;
+        letter-spacing: 2px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .q_split_wrap {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    
+}
