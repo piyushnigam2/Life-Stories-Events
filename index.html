@@ -61,22 +61,7 @@
 
     </section>-->
     <!-- Home ENDS -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">HOME</a>
-        <a href="#">Services</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="#">Contact</a>
-    </div>
-    <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
+    
 
     <!--Carousel starts-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -97,6 +82,23 @@
     <div class="carousel-inner">
             <div class="item active">
                 <div class="carousel-img">
+                    <div class="container">
+                        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="#">Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
                     <img src="img/caro_img1.jpg" alt="Image1">
                 </div>
                 <div class="carousel-content">
