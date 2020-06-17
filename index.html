@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/zocial.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/template_css.css" rel="stylesheet">
@@ -15,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/Layout.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </Head>
 
 <Body>
@@ -60,20 +60,22 @@
 
     </section>-->
     <!-- Home ENDS -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">HOME</a>
-        <a href="#">Services</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="#">Contact</a>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">What we do</a>
+        <a href="Gallery.html" class="w3-bar-item w3-button">Gallery</a>
     </div>
-    <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "750px";
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
         }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
         }
     </script>
 
@@ -135,7 +137,7 @@
 
             <div class="item">
                 <div class="carousel-img">
-                    <img src="img/caro_img4.jpg" alt="Image4">
+                    <img src="img/caro_imgx.jpg" alt="Image4">
                 </div>
                 <div class="carousel-content">
                     <img src="img/logow.png" class="img-responsive">
