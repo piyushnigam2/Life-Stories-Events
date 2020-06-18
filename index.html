@@ -4,12 +4,11 @@
     <Title>Life Stories Events</Title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/superslides.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/zocial.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/template_css.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -77,12 +76,22 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>-->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index: 999;" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="Our-Team.html" class="w3-bar-item w3-button">Our Team</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button">Services we offer<i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button">&nbsp;Wedding Stories</a>
+                <a href="#" class="w3-bar-item w3-button">&nbsp;Corporate Stories</a>
+                <a href="#" class="w3-bar-item w3-button">&nbsp;Social & Specialised Stories</a>
+            </div>
+        </div>
+        <a href="Gallery.html" class="w3-bar-item w3-button">Gallery</a>
     </div>
+    <div style="background-color: black;"><button class="w3-button w3-white w3-xlarge" onclick="w3_open()">☰ &emsp;Contact us at 91-XXXXXXXXXX</button></div>
+
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.display = "block";
@@ -206,7 +215,7 @@
                     <h1 class="section-headline wow bounceInLeft"> <span class="q_split"><span class="q_split_wrap rev_item">We Do What We Do</span></span> </h1>
                 </div>
                 <div class="column is-7">
-                    <p class="rev_item">The more you party the merrier you are, and we love to be a part of it. We are hunting your unique story to celebrate. <br><br> All you have to do is concentrate on sharing your moment and celebrating with your near and dear ones, and leave all the rest to us.</p>
+                    <p class="rev_item">We are a bunch of creativity striven beings, always up to create magical and unforgettable moments. Life is what brings the best stories to existence and has always been the brainbox to categorical incidents happening on diurnal basis. Stories makes life sound interesting and excites us to create some more highlighted versions of tales for people who have dreamt for amazing chronicles happening to them. We create your story, we try to share your joyous event even if it gets to us for a split of seconds. We believe stories can’t blossom if the creators don’t engage with the deepest cores of their hearts.</p>
                 </div>
             </div>
             <div class="columns">
@@ -236,7 +245,7 @@
                     <h1 class="section-headline animate__animated animate__bounceInLeft">Wedding Stories</h1>
                 </div>
                 <div class="column is-7">
-                    <h5 class="text-white" align="right">Except choosing your perfect match, we do the rest.</h5>
+                    <h5 class="text-white" align="right">THE BIGGER AND LARGER THE BETTER.</h5>
                 </div>
             </div>
             <div class="columns">
@@ -266,7 +275,7 @@
                     <h1 class="section-headline animate__animated animate__bounceInLeft">Corporate Stories</h1>
                 </div>
                 <div class="column is-5">
-                    <h5 class="text-white" align="right">All work and no play makes jack a dull boy.</h5>
+                    <h5 class="text-white" align="right">SOME FUN WON’T AFFECT YOUR PROFESSIONAL EVENT</h5>
                 </div>
             </div>
             <div class="columns">
@@ -297,7 +306,7 @@
                     <h1 class="section-headline animate__animated animate__bounceInLeft">Social Stories</h1>
                 </div>
                 <div class="column is-7">
-                    <h5 class="text-white" align="right">For all the social butterflies a reason to rejuvenate</h5>
+                    <h5 class="text-white" align="right">CELEBRATIONS THAT BRING YOU CLOSER</h5>
                 </div>
             </div>
         </div>
@@ -329,7 +338,7 @@
     <!-- Testimonials starts -->
     <div class="testimonials" style="background-image: url(img/double-bubble.png);">
         <div class="inner">
-            <h1>Testimonials</h1>
+            <h1>What our clients say about us</h1>
             <div class="border"></div>
 
             <div class="row">
@@ -337,14 +346,6 @@
                     <div class="testimonial">
                         <img src="img/avatar1.png" alt="">
                         <div class="name">Full name</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
@@ -355,14 +356,6 @@
                     <div class="testimonial">
                         <img src="img/avatar1.png" alt="">
                         <div class="name">Full name</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
@@ -373,14 +366,6 @@
                     <div class="testimonial">
                         <img src="img/avatar1.png" alt="">
                         <div class="name">Full name</div>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         </p>
@@ -419,7 +404,7 @@
                     <div id="footerSocial" class="custom follow_us pull-right clearfix">
                         <a href="#" target="_blank" class="zocial twitter"></a>
                         <a href="#" target="_blank" class="zocial facebook"></a>
-                        <a href="#" target="_blank" class="zocial instagram"></a>
+                        <a href="https://www.instagram.com/life_stories_events/?igshid=1firct68k2z6j" target="_blank" class="zocial instagram"></a>
                         <a href="#" target="_blank" class="zocial email"></a><br>
                     </div>
                     <!-- footerSocial ENDS -->
