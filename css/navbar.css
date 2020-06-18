@@ -35,6 +35,9 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+span {
+  font-size: 10px;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
