@@ -6,7 +6,7 @@
 	<!--<link rel="stylesheet" href="css/animate.css">-->
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/weddingcss.css">
 	<title>Wedding Stories by Life Stories Event Management Company Indore</title>
@@ -19,6 +19,32 @@
 </head>
 
 <body>
+	<!--Navbar Starts-->
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index: 999;" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="Our-Team.html" class="w3-bar-item w3-button">Our Team</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-bar-item w3-button">Services we offer<i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block">
+                <a href="wedding.html" class="w3-bar-item w3-button">&nbsp;Wedding Stories</a>
+                <a href="corporate.html" class="w3-bar-item w3-button">&nbsp;Corporate Stories</a>
+                <a href="specialized.html" class="w3-bar-item w3-button">&nbsp;Social & Specialised Stories</a>
+            </div>
+        </div>
+        <a href="Gallery.html" class="w3-bar-item w3-button">Gallery</a>
+    </div>
+    <div style="background-color: black;"><button class="w3-button w3-white w3-xlarge" onclick="w3_open()"><h3>☰ &emsp;Contact us at 91-XXXXXXXXXX</h3></button></div>
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <!-- Navbar ends -->
 	<!--
 	<div id="top_banner" class="top_banner_all">
 	<div class="">
