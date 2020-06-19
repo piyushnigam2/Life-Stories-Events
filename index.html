@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/Layout.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
 </Head>
 
 <Body>
@@ -77,6 +76,8 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>-->
+
+    <!--Navbar Starts-->
     <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none; z-index: 999;" id="mySidebar">
         <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
         <a href="index.html" class="w3-bar-item w3-button">Home</a>
@@ -101,6 +102,7 @@
             document.getElementById("mySidebar").style.display = "none";
         }
     </script>
+    <!-- Navbar ends -->
 
     <!--Carousel starts-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -435,7 +437,12 @@
     </section>
 
     <script>
-        AOS.init();
+        $(function() {
+            AOS.init();
+        });
+        $(window).on('load', function() {
+            AOS.refresh();
+        });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

@@ -15,7 +15,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/app.css" type="text/css">
     <link href="css/zocial.css" rel="stylesheet">
     <link href="css/template_css.css" rel="stylesheet">
@@ -83,7 +83,7 @@
 <!-- Team details starts -->
     <div class="testimonials" style="background-image: url(img/double-bubble.png);">
         <div class="inner">
-            <h1>Meet the core team members at Life Stories Events</h1>
+            <h1 data-aos="fade-up">Meet the core team members at Life Stories Events</h1>
             <div class="border"></div>
 
             <div class="row">
@@ -186,7 +186,12 @@
 
     </section>
     <script>
-        AOS.init();
+        $(function() {
+            AOS.init();
+        });
+        $(window).on('load', function() {
+            AOS.refresh();
+        });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
