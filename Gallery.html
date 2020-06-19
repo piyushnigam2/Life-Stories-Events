@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/app.css" type="text/css">
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/zocial.css" rel="stylesheet">
     <link href="css/template_css.css" rel="stylesheet">
 <style>
@@ -73,91 +72,64 @@ body {
   }
 }
 
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+* {
+  box-sizing: border-box;
 }
 
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
 }
 
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.column img:hover {
+  opacity: 1;
 }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
 }
 
-/* The Close Button */
-.close {
+/* Expanding image text */
+#imgtext {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
 </style>
 </head>
 <body>
@@ -187,7 +159,7 @@ body {
         </div>
         <a href="Gallery.html" class="w3-bar-item w3-button">Gallery</a>
     </div>
-    <div style="background-color: black;"><button class="w3-button w3-white w3-xlarge" onclick="w3_open()"><h3>☰ &emsp;Contact us at 91-7828335049</h3></button></div>
+    <div style="background-color: black;"><button class="w3-button w3-white w3-xlarge" onclick="w3_open()"><h3>☰ &emsp;Contact us at 91-XXXXXXXXXX</h3></button></div>
 
     <script>
         function w3_open() {
@@ -229,29 +201,28 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="img/caro_img1.jpg" id="myImg" style="width:100%">
-    <img src="img/caro_img2.jpg" id="myImg" style="width:100%">
+    <img src="img/caro_img1.jpg" style="width:100%" onclick="myFunction(this);">
+    <img src="img/caro_img2.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img/slide-1.jpg" id="myImg" style="width:100%">
-    <img src="img/caro_img3.jpg" id="myImg" style="width:100%">
+    <img src="img/slide-1.jpg" style="width:100%" onclick="myFunction(this);">
+    <img src="img/caro_img3.jpg" style="width:100%" onclick="myFunction(this);">
   </div>  
   <div class="column">
-    <img src="img/wwd-img2.jpg" id="myImg" style="width:100%">
-    <img src="img/slide-2.jpg" id="myImg" style="width:100%">
+    <img src="img/wwd-img2.jpg" style="width:100%" onclick="myFunction(this);">
+    <img src="img/slide-2.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
   <div class="column">
-    <img src="img/slide3.jpg" id="myImg" style="width:100%">
-    <img src="img/transport.jpg" id="myImg" style="width:100%">
+    <img src="img/slide3.jpg" style="width:100%" onclick="myFunction(this);">
+    <img src="img/transport.jpg" style="width:100%" onclick="myFunction(this);">
   </div>
-</div><br>
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
 </div>
 
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
 
 <!--Footer-->
     <section id="footerWrap" class="pgWrap pull-left clearfix">
@@ -295,7 +266,7 @@ body {
                 <div class="col-md-12 clearfix">
 
                     <div id="copyright" class="clearfix">
-                        <p class="footerText">Designed by <span class="white"><a href="http://www.highq.co.in/">HighQ</a></span></p>
+                        <p class="footerText">Designed by <span class="white">HighQ</span></p>
                         <p class="footerText">&copy; 2020 All Rights Reserved.</p>
                     </div>
 
@@ -309,28 +280,14 @@ body {
 
     </section>
     <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-</script>
-
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
